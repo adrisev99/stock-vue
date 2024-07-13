@@ -5,7 +5,6 @@ import StockData from './components/StockData/StockData';
 import StockPredictions from './components/StockPredictions/StockPredictions';
 import LandingPage from './components/LandingPage/LandingPage'; // Ensure correct import path
 import Sidebar from './components/ui/sidebar';
-import { StockProvider } from './context/StockContext';
 import './App.css';
 
 function App() {
@@ -25,7 +24,6 @@ function App() {
   };
 
   return (
-    <StockProvider>
       <Router>
         <div className={`flex flex-col min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
           <Sidebar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
@@ -42,7 +40,6 @@ function App() {
           </footer>
         </div>
       </Router>
-    </StockProvider>
   );
 }
 
