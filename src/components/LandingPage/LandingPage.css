@@ -1,0 +1,69 @@
+.landing-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: dark-gray-900; /* Adjust background color as needed */
+  color: #fff;
+  overflow: hidden;
+}
+
+.sparkles-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* Ensure the sparkles don't interfere with interaction */
+}
+
+.landing-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0;
+  z-index: 1;
+  padding-bottom: 10px; /* Adjust as needed */
+}
+
+.landing-subtitle {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+.landing-buttons {
+  margin-top: 2rem;
+  z-index: 1;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.btn-primary {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #e07b00;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #2a5298;
+}
+
+.btn-secondary:hover {
+  background-color: #e0e0e0;
+}

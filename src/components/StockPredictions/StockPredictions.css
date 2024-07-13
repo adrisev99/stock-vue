@@ -1,0 +1,66 @@
+.stockpredictions-container {
+  padding: 20px;
+  width: 90vw;
+}
+
+.stockpredictions-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.stockpredictions-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.stockpredictions-button, .stockpredictions-save-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.stockpredictions-button:hover, .stockpredictions-save-button:hover{
+  background-color: #45a049;
+}
+
+.stockpredictions-charts {
+  margin-top: 20px;
+}
+
+.saved-predictions {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.saved-prediction-details {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.saved-prediction-details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-red-500 {
+  color: red;
+}
+
+.text-blue-500 {
+  color: blue;
+}
+

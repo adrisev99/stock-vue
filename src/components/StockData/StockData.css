@@ -1,0 +1,52 @@
+.stockdata-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--color-bg-light);
+  color: var(--color-text-dark);
+}
+
+.stockdata-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.stockdata-input {
+  border: 1px solid var(--color-border);
+  padding: 0.5rem;
+  width: 16rem;
+  background-color: var(--color-bg-input);
+  color: var(--color-text-input);
+}
+
+.stockdata-info {
+  margin-bottom: 2rem;
+}
+
+.stockdata-info h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.stockdata-info p {
+  margin: 0.25rem 0;
+  width: 100vw;
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 700px; /* Adjust based on your preference */
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.area-chart {
+  width: 100%;
+  height: 100%;
+}
+

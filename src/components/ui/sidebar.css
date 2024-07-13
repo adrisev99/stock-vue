@@ -1,0 +1,47 @@
+/* src/components/ui/sidebar.css */
+.sidebar-container {
+  width: 250px;
+  background-color: rgba(70, 70, 70, 0.9); /* Semi-transparent background */
+  color: var(--color-text-dark);
+  height: 100vh; /* Make the sidebar take the full height of the viewport */
+  position: absolute; /* Use absolute positioning */
+  top: 0;
+  left: 0;
+  transform: translateX(-100%); /* Hide the sidebar by default */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for showing/hiding */
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  opacity: 0.8;
+  padding-top: 2rem;
+}
+
+.sidebar-container.translate-x-0 {
+  transform: translateX(0); /* Show the sidebar when this class is applied */
+}
+
+.sidebar-item {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  margin-bottom: 1rem; /* Add space between the items */
+}
+
+.sidebar-item:hover {
+  background-color: rgba(80, 80, 80, 2); /* Semi-transparent hover background */
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--color-text-dark);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
